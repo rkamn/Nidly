@@ -1,2 +1,2 @@
-# Nidly - Movie Rental APP
-Movie Rental App
+# Nidly-MVC5
+Movio Rental App
