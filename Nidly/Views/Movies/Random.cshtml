@@ -1,0 +1,31 @@
+﻿@model Nidly.ViewModels.RandomMovieViewModel
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*
+    
+    This is a comment
+    On multiple lines
+
+*@
+
+@{
+var className = Model.Customers.Count > 0 ? popular : null;
+}
+<h2 class="@className">@ViewData.Movie.Name</h2>
+
+@if(Model.Customers.Count == 0)
+{
+  <text> No one has resnted this movie before.</text>
+}
+else
+{
+    <ul>
+      @foreach(var  customer in Model.Customers)
+       {
+          <li>@Customer.Model</li>
+       }
+</ul>
+}
